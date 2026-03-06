@@ -1,5 +1,5 @@
-# NAMA  : 
-# KELAS : 
+# NAMA  : chavia lively T
+# KELAS : 9A
 # ---------------------------------------------------------
 # LATIHAN: REVIEW LIST PYTHON
 #Diberikan sebuah data acak nilai ujian siswa. Buatlah program yang mengurutkan data tersebut 
@@ -16,3 +16,14 @@
 # ---------------------------------------------------------
 
 # Tulis kodemu di bawah ini:
+ujian = [75, 55, 90, 85, 45, 95, 80]
+
+ujian.sort(reverse=True)
+print("Data nilai tertinggi-terendah :",ujian)
+top = ujian[:3]
+print("Penerima beasiswa :",top)
+kkm = []
+for nilai in ujian:
+    if nilai >= 60:
+        kkm.append(nilai)
+print("Nilai yang lulus :",kkm)
